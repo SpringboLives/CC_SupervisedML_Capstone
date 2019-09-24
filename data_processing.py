@@ -39,7 +39,7 @@ selected_features = [
     ]
 
 
-# iterates through selected labels and spits out the best scores for different classifiers
+# You can add more than one column name to selected_labels and the loop will spit out the best scores for different classifiers.
 selected_labels = ['body_type']
 for selected_label in selected_labels:
     feature_data = df[selected_features + [selected_label]].dropna(axis=0)
